@@ -15,14 +15,6 @@ span{
     font-size: 10pt;
 }
 
-#detail{
-    background-color: darkcyan;
-    height: 100%;
-    width: 230px;
-    position: absolute;
-    clear: right;
-}
-
 .center{
     text-align:center;
 }
