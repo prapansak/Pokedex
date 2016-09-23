@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>POKEDEX</title>  
+    <meta charset="UTF-8"> 
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+      <header>POKEDEX</header>
+      <section id="pokemon"></section>     
+      
+      <script src="js/jquery-3.1.0.min.js"></script>
+      <script src="js/pokedex.js"></script>
+      <script>
+          var num = 100;
+          $(function(){
+              for(var i=1;i<=num;i++){
+                  getPokemon(i);
+              }
+          });
+      </script>
+    </body>
+</html>
