@@ -1,22 +1,28 @@
 {
-  "name": "Pokedex",
+  "name": "pokedex",
   "version": "1.0.0",
-  "description": "front techs homework #1 - pokedex",
+  "description": "learning react,webpack,axios and babel",
   "main": "index.html",
   "scripts": {
-    "start": "node_modules/http-server/bin/http-server"
+    "build": "./node_modules/.bin/webpack --display-error-details",
+    "start": "./node_modules/.bin/webpack-dev-server --content-base dist"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/prapansak/Pokedex.git"
   },
   "author": "Prapansak Kaewlamul",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/prapansak/Pokedex/issues"
   },
   "homepage": "https://github.com/prapansak/Pokedex#readme",
   "devDependencies": {
-    "http-server": "^0.9.0"
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
   }
 }
