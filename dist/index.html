@@ -6,33 +6,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-      <header>POKEDEX</header>
       <section id="pokemon"></section>     
-      
-      <script src="js/jquery-3.1.0.min.js"></script>
+
       <script src="pokedex.js"></script>
-      <script>
-          var num = 10;
-          $(function(){
-              for(var i=1;i<=num;i++){
-                  getPokemon(i);
-              }
-              
-              function getPokemon(id){
-                $.ajax({
-                    type: 'get',
-                    url: 'http://pokeapi.co/api/v1/pokemon/'+id,
-                    dataType: 'jsonp',
-                    success: function(result){
-                        console.log(result);
-                        $('#pokemon').append('<div class="card"><img src="http://pokeapi.co/media/img/'+id+'.png"><div class="desc"><span class="center">'+result.name+'</span><span class="center">HP-'+result.hp+'</span><span class="center">ATTACK-'+result.attack+'</span></div></div>');
-                    },
-                    error: function(xhr,status){
-                        console.log(status);
-                    }
-                });
-             }
-          });
-      </script>
     </body>
 </html>
